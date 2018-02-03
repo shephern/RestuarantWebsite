@@ -1,0 +1,708 @@
+body {
+  font-family: 'Merriweather', serif;
+  background-image: url(images/osu1.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size:cover;
+  /*height:100%;*/
+}
+
+.user{
+color:rgba(250,245,107,1);
+padding-top:0px;
+margin-top:0px;
+text-align:right;
+}
+
+nav{
+  display:block;
+  left: 0px;
+  /*margin-right:1400px;*/
+  color:rgba(191,144,0,1);
+  /*background-color:rgba(15,21,40,.98);*/
+  text-align:center;
+  overflow:hidden;
+  margin-right:30%;
+  margin-left:30%;
+  width:auto;
+}
+
+nav ul {
+  padding:0;
+}
+nav li {
+  list-style-type:none;
+}
+nav a {
+  display:block;
+  /*font-size:100%;*/
+  margin:.5%;
+  padding:.5%;
+  /*width:135px;*/
+  /*float:left;*/
+  text-decoration:none;
+  background-color:rgba(195,69,0,.90);
+  color:black !important;
+}
+
+.border{
+  border-style:double;
+  border-color:#352F2B;
+}
+
+
+table {
+  width:100%;
+  border-collapse:collapse;
+}
+  tr {}
+  th {}
+  td {}
+
+tfoot {display:none;}
+tr {border-bottom:2px solid white;}
+th {padding:1%; border-bottom:2px solid whitesmoke;}
+td {padding:1%;}
+td[colspan] {background-color:#4E5D7D;}
+#skills th:nth-child(1) {text-align:right; width:25%;}
+th.sort-header {cursor:pointer;}
+th.sort-header:after {
+    content:" ↑↓"; 
+    font-size:150%;
+}
+
+td[colspan]:hover {
+    animation: expand 1s 1;
+    background-color: rgba(191,144,0,.85);
+    color:rgba(15,21,40,.98);
+    }
+
+article {
+ /* margin-left:90px;
+  margin-right:90px;*/
+  margin-right:2%;
+  margin-left:2%;
+  color:black;
+  background-color:rgba(195,69,0,.90);
+  padding:5px;
+  margin-bottom:15px;
+  width:100%%;
+  overflow: auto;
+} 
+
+/*Added by nathan, for side by side forms*/
+#space1 {
+  overflow: auto;
+  width: 49%;
+  float: left;
+  height: 100%;
+  background-color:transparent;
+}
+
+#space2 {
+  overflow: auto;
+  width: 49%;
+  float: left;
+  height: 100%;
+  background-color:transparent;
+}
+
+/*Added by nathan for error messages*/
+.error {
+  color: white;
+  background-color: rgba(195,69,0,.90);
+}
+
+/*Added by nathan for CSS buttons register and login*/
+input[type=submit] {
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  color: black;  
+  background-color: white;
+  border: 10% solid #555555;
+}
+
+input[type=submit]:hover {
+  background-color: #555555;
+  border: 10% solid #FFFFFF;
+  color: white;
+}
+
+/*Added by Nathan for restaurant display*/
+pre {
+  font-family: 'Merriweather', serif;
+}
+
+/*Added by Nathan for restaurant links*/
+.pageLink {
+  color: black;
+  text-decoration: underline;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+
+.pageLink:hover {
+  color:rgba(250,245,107,1);
+  text-decoration: underline;
+}
+
+/*Added by Nathan for image evening*/
+.imgcontainer{
+	width: 50%;
+	height: 35%;
+	display: block;
+}
+
+.imgcontainer img {
+	max-height: 100%;
+	max-width: 100%;
+}
+/*Added by Nathan for up button*/
+button:disabled {
+  background-color: #555555;
+  border: 10% solid #FFFFFF;
+  color: white;
+}
+
+.upButton {
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  color: black;
+  background-color: white;
+  border: 10% solid #555555;
+}
+
+.upButton:before {content: "\2191";}
+
+.upButton:hover {
+  background-color: #555555;
+  border: 10% solid #FFFFFF;
+  color: white;
+}
+
+/*Added by Nathan for down button*/
+.downButton {
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  color: black;
+  background-color: white;
+  border: 10% solid #555555;
+  text-decoration: bold;
+}
+
+.downButton:before {content: "\2193";}
+
+.downButton:hover {
+  background-color: #555555;
+  border: 10% solid #FFFFFF;
+  color: white;
+}
+
+.commButton {
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  color: black;
+  background-color: white;
+  border: 10% solid #555555;
+}
+
+.commButton:hover {
+  background-color: #555555;
+  border: 10% solid #FFFFFF;
+  color: white;
+}
+
+textarea {
+  resize: none;
+  font-family: 'Merriweather', serif;
+}
+
+footer {
+  /*margin-left:90px;
+  margin-right:90px;*/
+  margin-right:2%;
+  margin-left:2%;
+  width:auto;
+  color:black;
+  background-color:rgba(195,69,0,.90);
+  padding:5px;
+  text-align:middle !important;
+}
+
+ul
+{
+    list-style-type: none;
+}
+
+section{
+background-color:rgba(250,245,107,.30);
+}
+
+.login{
+background-color:rgba(195,69,0,.90) !important;
+color:black !important;
+padding:5px;
+margin-right:2%;
+float:right;
+text-decoration:none;
+}
+
+.login:hover{
+background-color:rgba(250,245,107,.80) !important;
+  }
+
+.commentsArticle{
+height:370px;
+overflow:hidden;
+margin-left:6% !important;
+}
+
+.navigation:hover{
+background-color:rgba(250,245,107,.80) !important;
+}
+
+.comment1{
+width: 48%;
+float:left;
+}
+
+.upHome{
+float:right;
+position:fixed;
+width:25px;
+overflow:hidden;
+margin-left:0px !important;
+text-decoration:none;
+color:black;
+text-align:middle;
+}
+
+.comment2{
+width:50%;
+float:right;
+overflow:auto;
+word-wrap: break-word;
+height:91%;
+padding-left: 2px;
+}
+
+.commentFrame{
+overflow:auto;
+}
+
+.restLinks{
+color:black;
+text-decoration:none;
+}
+
+.restLinks:hover{
+color:rgba(250,245,107,1);
+}
+
+.rate{
+  display:block;
+  text-decoration:none;
+  color:black;
+  float:right;
+  width:100%;
+}
+
+.rate:hover{
+color:rgba(250,245,107,1);
+}
+
+.goHome{
+  display:block;
+  text-decoration:none;
+  color:black;
+  padding-bottom:2px;
+}
+
+.commentNav{
+color:black;
+text-decoration:none;
+}
+
+.commentNav:hover{
+color:rgba(250,245,107,1);
+}
+
+.register{
+color:black;
+text-decoration:none;
+}
+
+.register:hover{
+color:rgba(250,245,107,1);
+}
+
+/*DROPDOWN MENU STUFF*/
+
+/* Dropdown Button */
+.dropbtn {
+    background-color:rgba(195,69,0,.90);
+    color: black;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+    background-color:rgba(250,245,107,.80);
+    color:black;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    /*margin-right:50%;*/
+    margin-left:6%;
+    margin-bottom:5px;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    overflow:auto;
+    max-height:200px;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
+/*DROPDOWN MENU STUFF*/
+
+/**
+ * Used from http://dimsemenov.com/plugins/magnific-popup/
+ * Under the MIT license, credit goes to Dmitry Semenov
+ * Simple fade transition,
+ */
+.mfp-fade.mfp-bg {
+  opacity: 0;
+  -webkit-transition: all 0.15s ease-out; 
+  -moz-transition: all 0.15s ease-out; 
+  transition: all 0.15s ease-out;
+}
+.mfp-fade.mfp-bg.mfp-ready {
+  opacity: 0.8;
+}
+.mfp-fade.mfp-bg.mfp-removing {
+  opacity: 0;
+}
+
+.mfp-fade.mfp-wrap .mfp-content {
+  opacity: 0;
+  -webkit-transition: all 0.15s ease-out; 
+  -moz-transition: all 0.15s ease-out; 
+  transition: all 0.15s ease-out;
+}
+.mfp-fade.mfp-wrap.mfp-ready .mfp-content {
+  opacity: 1;
+}
+.mfp-fade.mfp-wrap.mfp-removing .mfp-content {
+  opacity: 0;
+}
+/*End of Popup CSS*/
+
+.rateStars{
+
+}
+
+button:focus {outline:0;}
+
+form{
+text-align:left;
+}
+
+form button{
+color:black;
+background-color:transparent;
+width:5%;
+text-align:left;
+border-color:transparent;
+padding:7px;
+}
+
+form i{
+color:black;
+background-color:transparent;
+width:5%;
+text-align:left;
+border-color:transparent;
+padding:7px;
+}
+
+
+form i:hover{
+  color:yellow;
+}
+
+.clearBackground{
+background-color:transparent !important;
+padding-bottom:-10px;
+padding-top:-10px;
+margin-bottom:-15px;
+margin-top:-15px;
+}
+
+/*RATINGS FORM*/
+#ratingdiv{overflow:hidden}
+#ratingdiv .undone, #ratingdiv .fade{
+background:url("star.gif") -30px 0 no-repeat !important;
+width:28px !important;
+display:block !important;
+height:30px !important;
+float:left !important;
+margin-right:4px !important;
+text-indent:-99999px !important;
+}
+#ratingdiv .done{
+background:url("star.gif") no-repeat !important;
+width:28px !important;
+display:block !important;
+height:30px !important;
+float:left !important;
+margin-right:4px !important;
+text-indent:-99999px !important;
+}
+#ratingdiv .undone:hover{background-position:0}
+/*RATINGS FORM*/
+
+/*-----------------------NewStuff I Think-------------------------*/
+.commentsTable{
+background-color:transparent;
+color:;
+}
+
+.commentsTable:hover{
+background-color:transparent;
+color:none;
+border:none;
+}
+
+.commentsTable td[colspan]:hover{
+background-color:transparent;
+color:none;
+border:none;
+}
+
+.commentsTable td[colspan]{
+background-color:transparent;
+border:none:
+}
+
+.commentsTable tr{
+border:none;
+  }
+
+.commentPageLink{
+padding-left:10px;
+}
+
+/*BANNER LOGO*/
+.bannerImage{
+width:40%;
+margin-left:30%;
+margin-right:30%;
+
+}
+
+
+.rating {
+      overflow: hidden;
+      display: inline-block;
+  }
+  .rating-input {
+      float: right;
+      width: 25px;
+      height: 25px;
+      padding: 0;
+      margin: 0 0 0 -16px;
+      opacity: 0;
+  }
+  .rating-star {
+      display: block;
+      width: 25px;
+      height: 25px;
+      background: url('http://web.engr.oregonstate.edu/~shephern/rest/NewRate/star.png') 0 -16px;
+  }
+  .rating-star:hover {
+      background-position: 0 0;
+  }
+
+    .rating-star {
+      position: relative;
+      float: right;
+      display: block;
+      width: 25px;
+      height: 25px;
+      background: url('http://web.engr.oregonstate.edu/~shephern/rest/NewRate/star.png') 0 -16px;
+  }
+
+  .rating-star:hover,
+  .rating-star:hover ~ .rating-star {
+      background-position: 0 0;
+  }
+
+    .rating-star:hover,
+  .rating-star:hover ~ .rating-star,
+  .rating-input:checked ~ .rating-star {
+      background-position: 0 0;
+  }
+
+    .rating:hover .rating-star:hover,
+  .rating:hover .rating-star:hover ~ .rating-star,
+  .rating-input:checked ~ .rating-star {
+      background-position: 0 0;
+  }
+  .rating-star,
+  .rating:hover .rating-star {
+      position: relative;
+      float: right;
+      display: block;
+      width: 16px;
+      height: 16px;
+      background: url('http://web.engr.oregonstate.edu/~shephern/rest/NewRate/star.png') 0 -16px;
+  }
+
+
+.rating2 {
+      overflow: hidden;
+      display: inline-block;
+  }
+  .rating-input2 {
+      float: right;
+      width: 25px;
+      height: 25px;
+      padding: 0;
+      margin: 0 0 0 -16px;
+      opacity: 0;
+  }
+  .rating-star2 {
+      display: block;
+      width: 25px;
+      height: 25px;
+      background: url('http://web.engr.oregonstate.edu/~shephern/rest/NewRate/star.png') 0 -16px;
+  }
+  .rating-star2:hover {
+      background-position: 0 0;
+  }
+
+    .rating-star2 {
+      position: relative;
+      float: right;
+      display: block;
+      width: 25px;
+      height: 25px;
+      background: url('http://web.engr.oregonstate.edu/~shephern/rest/NewRate/star.png') 0 -16px;
+  }
+
+  .rating-star2:hover,
+  .rating-star2:hover ~ .rating-star {
+      background-position: 0 0;
+  }
+
+    .rating-star2:hover,
+  .rating-star2:hover ~ .rating-star2,
+  .rating-input2:checked ~ .rating-star2 {
+      background-position: 0 0;
+  }
+
+    .rating2:hover .rating-star2:hover,
+  .rating2:hover .rating-star2:hover ~ .rating-star2,
+  .rating-input2:checked ~ .rating-star2 {
+      background-position: 0 0;
+  }
+  .rating-star2,
+  .rating2:hover .rating-star2 {
+      position: relative;
+      float: right;
+      display: block;
+      width: 16px;
+      height: 16px;
+      background: url('http://web.engr.oregonstate.edu/~shephern/rest/NewRate/star.png') 0 -16px;
+  }
+
+
+
+  .rating3 {
+      overflow: hidden;
+      display: inline-block;
+  }
+  .rating-input3 {
+      float: right;
+      width: 25px;
+      height: 25px;
+      padding: 0;
+      margin: 0 0 0 -16px;
+      opacity: 0;
+  }
+  .rating-star3 {
+      display: block;
+      width: 25px;
+      height: 25px;
+      background: url('http://web.engr.oregonstate.edu/~shephern/rest/NewRate/star.png') 0 -16px;
+  }
+  .rating-star3:hover {
+      background-position: 0 0;
+  }
+
+    .rating-star3 {
+      position: relative;
+      float: right;
+      display: block;
+      width: 25px;
+      height: 25px;
+      background: url('http://web.engr.oregonstate.edu/~shephern/rest/NewRate/star.png') 0 -16px;
+  }
+
+  .rating-star3:hover,
+  .rating-star3:hover ~ .rating-star {
+      background-position: 0 0;
+  }
+
+    .rating-star3:hover,
+  .rating-star3:hover ~ .rating-star3,
+  .rating-input3:checked ~ .rating-star3 {
+      background-position: 0 0;
+  }
+
+    .rating3:hover .rating-star3:hover,
+  .rating3:hover .rating-star3:hover ~ .rating-star3,
+  .rating-input3:checked ~ .rating-star3 {
+      background-position: 0 0;
+  }
+  .rating-star3,
+  .rating3:hover .rating-star3 {
+      position: relative;
+      float: right;
+      display: block;
+      width: 16px;
+      height: 16px;
+      background: url('http://web.engr.oregonstate.edu/~shephern/rest/NewRate/star.png') 0 -16px;
+  }
+
+  #rateSubmit{
+margin-left:10px;
+  }
+
+  /*-----------------------NewStuff I Think-------------------------*/
